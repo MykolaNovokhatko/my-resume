@@ -245,41 +245,6 @@
               </a>
             </p>
           </div>
-          <!-- 1111111111111111111111111111111111111 -->
-          <h2>Залиште свій коментар</h2>
-    <form id="commentForm">
-        <label for="email">Ваш емейл:</label><br>
-        <input type="email" id="email" name="email" required><br> <!-- Поле для електронної пошти -->
-        <label for="comment">Коментар:</label><br>
-        <textarea id="comment" name="comment" rows="4" cols="50" required></textarea><br> <!-- Поле для коментаря -->
-        <button type="submit">Надіслати</button>
-    </form>
-
-    <script>
-        document.getElementById("commentForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Зупиняємо стандартну поведінку форми
-
-            var email = document.getElementById("email").value; // Отримуємо значення електронної пошти
-            var comment = document.getElementById("comment").value; // Отримуємо значення коментаря
-
-            // Використовуємо AJAX для відправлення даних форми на сервер
-            var xhr = new XMLHttpRequest();
-            xhr.open("POST", "mailer.php"); // Це URL адреса вашого серверного скрипту, який буде відправляти електронні листи
-            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState === XMLHttpRequest.DONE) {
-                    if (xhr.status === 200) {
-                        alert("Дякуємо за ваш коментар! Ми отримали його і розглянемо.");
-                    } else {
-                        alert("Виникла помилка при відправленні коментаря.");
-                    }
-                }
-            };
-            xhr.send("email=" + encodeURIComponent(email) + "&comment=" + encodeURIComponent(comment));
-        });
-    </script>
-        </div>
-      </aside>
     </div>
   </body>
 </html>
