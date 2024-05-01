@@ -204,24 +204,18 @@
           </div>
 
           <!-- Contacts -->
-          <div class="contacts-container">
-            <h3 class="contacts-title">Contacts</h3>
-            <p class="contacts-item">
-              <span class="contacts-type">Tel.(WhatsApp Telegram):</span>
-              <a class="contacts-link" href="tel:+351910567148" target="_blank">
-                <br />+351 91 056 71 48</a
-              >
-            </p>
-            <p class="contacts-item">
-              <span class="contacts-type">Email:</span>
-              <a
-                class="contacts-link"
-                href="novokhatko.mykola.serhiyovych@gmail.com
-              "
-                target="_blank"
-                >novokhatko.mykola.serhiyovych@gmail.com
-              </a>
-            </p>
+          <h3 class="contacts-title">Contacts</h3>
+          <button id="viewContactsBtn">Переглянути контакти</button>
+<div id="contactsContainer" style="display: none;">
+    <p class="contacts-item">
+        <span class="contacts-type">Tel.(WhatsApp Telegram):</span>
+        <a class="contacts-link" href="tel:+351910567148" target="_blank"><br />+351 91 056 71 48</a>
+    </p>
+    <p class="contacts-item">
+        <span class="contacts-type">Email:</span>
+        <a class="contacts-link" href="mailto:novokhatko.mykola.serhiyovych@gmail.com" target="_blank">novokhatko.mykola.serhiyovych@gmail.com</a>
+    </p>
+</div>
 
             <!-- Other information -->
             <h3 class="contacts-title">Other information</h3>
@@ -246,5 +240,15 @@
             </p>
           </div>
     </div>
+    <script>
+        document.getElementById("viewContactsBtn").addEventListener("click", function() {
+    var contactsContainer = document.getElementById("contactsContainer");
+    if (contactsContainer.style.display === "none") {
+        contactsContainer.style.display = "block";
+    } else {
+        contactsContainer.style.display = "none";
+    }
+});
+    </script>
   </body>
 </html>
