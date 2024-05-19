@@ -224,7 +224,7 @@ ol {
   margin-bottom: 12px;
 }
 
-.company-name {
+.position-name {
   color: #6d9bf5;
   font-size: 16px;
   font-weight: 700;
@@ -232,7 +232,7 @@ ol {
 }
 
 .work-experience-period {
-  color: #a8a8a8;
+  color: #575757;
   font-size: 12px;
   font-weight: 400;
   line-height: 15px;
@@ -267,7 +267,7 @@ ol {
 }
 
 .education-title-name {
-  color: #6d9bf5;
+  color: #000;
   font-size: 16px;
   font-weight: 700;
   line-height: normal;
@@ -275,15 +275,22 @@ ol {
 }
 
 .education-title-name-specialty {
-  color: #000;
+  color: #6d9bf5;
   font-size: 14px;
   font-weight: 700;
   line-height: normal;
   margin-bottom: 8px;
 }
 
-.education-period {
+.position-style {
   color: #a8a8a8;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.education-period {
+  color: #575757;
   font-size: 12px;
   font-weight: 400;
   line-height: normal;
